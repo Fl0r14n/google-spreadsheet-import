@@ -1,0 +1,14 @@
+#framework
+django<1.7
+
+#db
+south
+
+#libs
+python-oauth2
+django-social-auth
+google-api-python-client
+
+#debug
+ipython
+ipdb

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Google Spreadsheet Import</title>
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+    <p>Authenticated</p>
+    {% else %}
+    <a href="{% url 'socialauth_begin' 'google-oauth2' %}">Login with Google</a>
+    {% endif %}
+</body>
+</html>
