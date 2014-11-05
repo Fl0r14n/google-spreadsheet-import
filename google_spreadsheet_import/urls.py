@@ -11,4 +11,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include(social_auth.urls)),
     url(r'^$', views.home, name='index'),
+    url(r'^export/$', views.export, name='export')
 )
